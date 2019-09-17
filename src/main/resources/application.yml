@@ -1,0 +1,27 @@
+server:
+  port: 19090
+
+spring:
+  datasource:
+    url: jdbc:h2:file:/home/jslim/Work/system-service-repository;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    platform: h2
+    username: sa
+    password:
+    initialization-mode: embedded
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+      use-new-id-generator-mappings: false
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  session:
+    store-type: jdbc
