@@ -4,9 +4,10 @@ plugins {
     id 'java'
 }
 
-group = 'com.pentasecurity.isignplus'
+group = 'josh0766'
 version = '1.0.0.0'
 sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 configurations {
     compileOnly {
